@@ -14,6 +14,7 @@
 		909E5A9F1E6D3B740000A157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E5A9E1E6D3B740000A157 /* Assets.xcassets */; };
 		909E5AA21E6D3B740000A157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909E5AA01E6D3B740000A157 /* LaunchScreen.storyboard */; };
 		909E5AAB1E6D51B50000A157 /* CricleSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 909E5AAA1E6D51B50000A157 /* CricleSlideView.m */; };
+		909E5AAE1E6EA0150000A157 /* DottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 909E5AAD1E6EA0150000A157 /* DottedLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		909E5AA31E6D3B740000A157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909E5AA91E6D51B50000A157 /* CricleSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CricleSlideView.h; sourceTree = "<group>"; };
 		909E5AAA1E6D51B50000A157 /* CricleSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CricleSlideView.m; sourceTree = "<group>"; };
+		909E5AAC1E6EA0150000A157 /* DottedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DottedLineView.h; sourceTree = "<group>"; };
+		909E5AAD1E6EA0150000A157 /* DottedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DottedLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				909E5A991E6D3B740000A157 /* ViewController.m */,
 				909E5AA91E6D51B50000A157 /* CricleSlideView.h */,
 				909E5AAA1E6D51B50000A157 /* CricleSlideView.m */,
+				909E5AAC1E6EA0150000A157 /* DottedLineView.h */,
+				909E5AAD1E6EA0150000A157 /* DottedLineView.m */,
 				909E5A9B1E6D3B740000A157 /* Main.storyboard */,
 				909E5A9E1E6D3B740000A157 /* Assets.xcassets */,
 				909E5AA01E6D3B740000A157 /* LaunchScreen.storyboard */,
@@ -159,6 +164,7 @@
 				909E5A9A1E6D3B740000A157 /* ViewController.m in Sources */,
 				909E5A971E6D3B740000A157 /* AppDelegate.m in Sources */,
 				909E5AAB1E6D51B50000A157 /* CricleSlideView.m in Sources */,
+				909E5AAE1E6EA0150000A157 /* DottedLineView.m in Sources */,
 				909E5A941E6D3B740000A157 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +324,7 @@
 				909E5AA81E6D3B740000A157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CricleSlideView.h"
+#import "DottedLineView.h"
 
 @interface ViewController ()
 
@@ -27,7 +28,7 @@
     testView.progress = 0.4;
 //    testView.lineWidth = 10;
     [self.view addSubview:testView];
-    */
+    
     
     CricleSlideView *testView1 = [[CricleSlideView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     testView1.center = self.view.center;
@@ -36,8 +37,13 @@
     testView1.progress = 0.8;
     testView1.lineWidth = 10;
     [self.view addSubview:testView1];
- 
-     
+ */
+    
+    DottedLineView *lineView = [[DottedLineView alloc] initWithFrame:CGRectMake(20, 60, self.view.frame.size.width - 40, 10)];
+    lineView.lineWidth = 2;
+    lineView.lineDashPattern = @[@10,@5];
+    lineView.strokeColor = [UIColor redColor];
+    [self.view addSubview:lineView];
     
 //    [self testCircle];
     
@@ -94,6 +100,26 @@
     [redLayer addAnimation:animation forKey:nil];
     
     CGPathRelease(path);
+}
+
+
+-(void)testLine
+{
+     UIBezierPath *path = [[UIBezierPath alloc] init];
+    [path moveToPoint:CGPointMake(40, 40)];
+    [path addLineToPoint:CGPointMake(40, 600)];
+   
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.strokeColor = [UIColor colorWithRed:123/255.0f green:123/255.0f blue:123/255.0f alpha:1].CGColor;
+    shapeLayer.fillColor = [UIColor yellowColor].CGColor;
+    shapeLayer.lineWidth = 2;
+    shapeLayer.lineJoin = kCALineJoinRound;
+    shapeLayer.lineCap = kCALineCapButt;
+    shapeLayer.lineDashPattern = @[@10,@5];
+    shapeLayer.path = path.CGPath;
+    [self.view.layer addSublayer:shapeLayer];
+    
+    
 }
 
 
